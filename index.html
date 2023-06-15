@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Assignment 3 - Hangman</h1>
+</header>
+
+<main>
+    <article>
+        <h2>Welcome to Hangman</h2>
+        <p>When you start the game, the computer will randomly pick a word.<br/>
+           Your goal is to guess the word before you hang the man.<br/>
+           Your only have 5 guesses
+        </p>
+    </article>
+	<div class="container">
+		<h1 class="text-center">Hangman</h1>
+		<div class="float-right">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'>5</span></div>
+		<div class="text-center">
+			<img id="hangmanPic" src="assets/image/0.jpg" alt="">
+			<p>Guess the word</p>
+			<p id="wordSpotlight">Type the guessed word here</p>
+			<div id="keyboard"></div>
+			<button class="btn btn-info" onclick="reset()">Reset</button>
+		</div>
+	</div>
+</main>
+
+<script src="assets/js/hangman.js"></script>
+
+<footer>
+    Rycoff - Hangman
+</footer>
+
+</body>
+</html>
